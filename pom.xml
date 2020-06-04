@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>NoveltySearchGraph</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <commons-lb.dir>lt.lb.commons</commons-lb.dir>
+        <commons-lb.version>local-jar</commons-lb.version>
+        
+        <!--<commons-lb.dir>com.github.laim0nas100.Commons</commons-lb.dir>-->
+        <!--<commons-lb.version>17b8f88fd011f159cba8cdbf40e7ee1aabb6e1a3</commons-lb.version>-->
+    </properties>
+    
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    
+    
+    
+    <dependencies>
+        
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-core</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-threads</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-graphtheory</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-log</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-collections</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>lt.lb</groupId>
+            <artifactId>NeurEvol</artifactId>
+            <version>local-jar</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.1-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-io</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${commons-lb.dir}</groupId>
+            <artifactId>commonslb-lexing</artifactId>
+            <version>${commons-lb.version}</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+    </dependencies>
+</project>
